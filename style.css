@@ -1,0 +1,161 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.calc-container{
+    display: flex;
+    width: 95vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.calc-element{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;    
+    align-items: center;
+    width: 95%;
+    max-width: 52rem;
+    height: 70%;
+    max-height: 50rem;
+    margin: auto;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 0 1rem 0 white;
+}
+
+.display-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem 0 black;
+}
+
+.number-box, .total-label, .operation-label{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2.2rem;
+    width: 100%;
+    height: 40%;
+    border: none;
+    outline: none;
+}
+
+.total-label, .operation-label{
+    font-size: 1.6rem;
+    justify-content: flex-end;
+}
+
+.numbers-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 65%;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 20%;
+}
+
+.number:hover,
+.dot:hover{
+    background-color: #adbce7;
+    transition: background-color 0.3s;
+}
+
+.number img, 
+.operator img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.dot{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
+    height: 20%;
+    padding: 1.5rem;
+}
+
+.dot img{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.number, .dot, .operator, .delete{ 
+    border: none;
+    border-radius: 1rem;
+    background-color: #e5e8e9;
+    transition: background-color 0.3s;
+}
+
+.operators-container{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 65%;
+    padding: 0.5rem;
+    gap: 1.2rem;
+}
+
+.operator{
+    width: 80%;
+    height: 15%;
+}
+
+.operator:hover{
+    background-color: #d3acac;
+    transition: background-color 0.3s;
+}
+
+.delete-buttons-container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 65%;
+    padding: 0.5rem;
+    gap: 1.2rem;
+}
+
+.delete{width: 80%;}
+
+.delete:hover{background-color: #9fd3a8;}
+
+#deleteAll{height: 25%;}
+#deleteCharacter{height: 65%;}
+
+#deleteAll img, 
+#deleteCharacter img{width: 70%;}
+
