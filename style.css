@@ -48,7 +48,7 @@ body{
     box-shadow: 0 0 0.5rem 0 black;
 }
 
-.number-box, .total-label, .operation-label{
+.number-box, .total-box, .operation-box{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -59,7 +59,7 @@ body{
     outline: none;
 }
 
-.total-label, .operation-label{
+.total-box, .operation-box{
     font-size: 1.6rem;
     justify-content: flex-end;
 }
@@ -134,7 +134,7 @@ body{
 }
 
 .operator:hover{
-    background-color: #d3acac;
+    background-color: #9fd3a8;
     transition: background-color 0.3s;
 }
 
@@ -151,7 +151,7 @@ body{
 
 .delete{width: 80%;}
 
-.delete:hover{background-color: #9fd3a8;}
+.delete:hover{background-color: #d3acac;}
 
 #deleteAll{height: 25%;}
 #deleteCharacter{height: 65%;}
